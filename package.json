@@ -8,13 +8,19 @@
     "start:dev": "nodemon index.js",
     "sass": "sass ./ressources/style.sass ./ressources/style.css",
     "sass:watch": "sass ./ressources/style.sass ./ressources/style.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test:watch": "mocha --watch",
+    "test:coverage": "nyc --reporter=html mocha",
+    "posttest:coverage": "open-cli ./coverage/index.html"
   },
   "author": "JB B (http://jbtestnode.com)",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "^8.2.0",
     "nodemon": "^2.0.6",
     "npm-run-all": "^4.1.5",
+    "nyc": "^15.1.0",
+    "open-cli": "^6.0.1",
     "sass": "^1.27.0"
   }
 }
