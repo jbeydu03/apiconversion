@@ -4,8 +4,13 @@
   "description": "APi qui permet de convertir des unités",
   "main": "index.js",
   "scripts": {
+    "start" : "node index.js",
+    "start:dev" : "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JB B (http://jbtestnode.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
