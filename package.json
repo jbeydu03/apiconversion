@@ -1,0 +1,11 @@
+{
+  "name": "jbl_conversion",
+  "version": "1.0.0",
+  "description": "APi qui permet de convertir des unités",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JB B (http://jbtestnode.com)",
+  "license": "ISC"
+}
