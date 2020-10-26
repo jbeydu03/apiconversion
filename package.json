@@ -4,13 +4,17 @@
   "description": "APi qui permet de convertir des unités",
   "main": "index.js",
   "scripts": {
-    "start" : "node index.js",
-    "start:dev" : "nodemon index.js",
+    "start": "npm-run-all --parallel start:dev sass:watch",
+    "start:dev": "nodemon index.js",
+    "sass": "sass ./ressources/style.sass ./ressources/style.css",
+    "sass:watch": "sass ./ressources/style.sass ./ressources/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JB B (http://jbtestnode.com)",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.27.0"
   }
 }
