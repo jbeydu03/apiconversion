@@ -11,7 +11,7 @@
     "test": "mocha",
     "test:watch": "mocha --watch",
     "test:coverage": "nyc --reporter=html mocha",
-    "posttest:coverage": "open-cli ./coverage/index.html"
+    "posttest:coverage": "open-cli ./coverage/index.html -- firefox"
   },
   "author": "JB B (http://jbtestnode.com)",
   "license": "ISC",
